@@ -5,6 +5,8 @@ import Helmet from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import Compare from '../components/ComparisonTable'
+
 
 export const BlogPostTemplate = ({
   content,
@@ -37,6 +39,8 @@ export const BlogPostTemplate = ({
                     </li>
                   ))}
                 </ul>
+                <h1>Which companies refinance student loans?</h1>
+                <Compare />
               </div>
             ) : null}
           </div>
