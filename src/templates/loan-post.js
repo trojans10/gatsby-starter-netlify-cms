@@ -8,7 +8,7 @@ import Content, { HTMLContent } from '../components/Content'
 import Compare from '../components/ComparisonTable'
 
 
-export const BlogPostTemplate = ({
+export const LoanPostTemplate = ({
   content,
   contentComponent,
   description,
@@ -39,7 +39,7 @@ export const BlogPostTemplate = ({
                     </li>
                   ))}
                 </ul>
-                <h1>Which BLOG companies refinance student loans?</h1>
+                <h1>Which testing refinance student loans?</h1>
                 <Compare />
               </div>
             ) : null}
@@ -50,7 +50,7 @@ export const BlogPostTemplate = ({
   )
 }
 
-BlogPostTemplate.propTypes = {
+LoanPostTemplate.propTypes = {
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
   description: PropTypes.string,
@@ -58,17 +58,17 @@ BlogPostTemplate.propTypes = {
   helmet: PropTypes.object,
 }
 
-const BlogPost = ({ data }) => {
+const LoanPost = ({ data }) => {
   const { markdownRemark: post } = data
 
   return (
     <Layout>
-      <BlogPostTemplate
+      <LoanPostTemplate
         content={post.html}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
         helmet={
-          <Helmet titleTemplate="%s | Blog">
+          <Helmet titleTemplate="%s | Loan">
             <title>{`${post.frontmatter.title}`}</title>
             <meta
               name="description"
@@ -83,16 +83,16 @@ const BlogPost = ({ data }) => {
   )
 }
 
-BlogPost.propTypes = {
+LoanPost.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.object,
   }),
 }
 
-export default BlogPost
+export default LoanPost
 
 export const pageQuery = graphql`
-  query BlogPostByID($id: String!) {
+  query LoanPostByID($id: String!) {
     markdownRemark(id: { eq: $id }) {
       id
       html

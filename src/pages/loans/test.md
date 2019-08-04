@@ -1,5 +1,5 @@
 ---
-templateKey: blog-post
+templateKey: loan-post
 title: test
 date: 2019-08-04T10:19:05.380Z
 description: tesy

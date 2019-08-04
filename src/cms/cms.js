@@ -4,6 +4,7 @@ import cloudinary from 'netlify-cms-media-library-cloudinary'
 
 import AboutPagePreview from './preview-templates/AboutPagePreview'
 import BlogPostPreview from './preview-templates/BlogPostPreview'
+import LoanPostPreview from './preview-templates/LoanPostPreview'
 import ProductPagePreview from './preview-templates/ProductPagePreview'
 import IndexPagePreview from './preview-templates/IndexPagePreview'
 import TestPagePreview from './preview-templates/TestPagePreview'
@@ -15,7 +16,8 @@ CMS.registerMediaLibrary(cloudinary);
 CMS.registerPreviewTemplate('index', IndexPagePreview)
 CMS.registerPreviewTemplate('about', AboutPagePreview)
 CMS.registerPreviewTemplate('products', ProductPagePreview)
-CMS.registerPreviewTemplate('blog', BlogPostPreview)
+CMS.registerPreviewTemplate('pages', BlogPostPreview)
+CMS.registerPreviewTemplate('pages', LoanPostPreview)
 CMS.registerPreviewTemplate('test', TestPreview)
 CMS.registerEditorComponent({
   // Internal id of the component
