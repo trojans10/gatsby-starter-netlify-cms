@@ -42,7 +42,7 @@ const Navbar = class extends React.Component {
         <div className="container">
           <div className="navbar-brand">
             <Link to="/" className="navbar-item" title="Logo">
-              <img src={logo} alt="Kaldi" style={{ width: '94px' }} />
+              <img src={logo} alt="Kaldi" style={{ width: '108px', maxHeight:'3rem' }} />
             </Link>
             {/* Hamburger menu */}
             <div
@@ -59,34 +59,22 @@ const Navbar = class extends React.Component {
             id="navMenu"
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
-            <div className="navbar-start has-text-centered">
-              <Link className="navbar-item" to="/about">
-                About
-              </Link>
-              <Link className="navbar-item" to="/products">
-                Start Here
+            <div className="navbar-end has-text-centered">
+              <Link className="navbar-item" to="/loans">
+                Student Loans
               </Link>
               <Link className="navbar-item" to="/blog">
-                Articles
+                Mortgages
               </Link>
-              <Link className="navbar-item" to="/loans">
-                Loans
+              <Link className="navbar-item" to="/blog">
+                Personal Loans
               </Link>
-              <Link className="navbar-item" to="/contact">
-                Contact
+              <Link className="navbar-item" to="/blog">
+                Auto Loans
               </Link>
-            </div>
-            <div className="navbar-end has-text-centered">
-              <a
-                className="navbar-item"
-                href="https://github.com/netlify-templates/gatsby-starter-netlify-cms"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span className="icon">
-                  <img src={github} alt="Github" />
-                </span>
-              </a>
+              <Link className="navbar-item" to="/blog">
+                Small Business Loans
+              </Link>
             </div>
           </div>
         </div>

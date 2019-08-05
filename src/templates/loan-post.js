@@ -39,7 +39,6 @@ export const LoanPostTemplate = ({
                     </li>
                   ))}
                 </ul>
-                <h1>Which testing refinance student loans?</h1>
                 <Compare />
               </div>
             ) : null}

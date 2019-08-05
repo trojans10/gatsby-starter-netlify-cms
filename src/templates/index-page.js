@@ -5,6 +5,8 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
+import StudentLoanLenders from '../components/StudentLoanLenders'
+import AutoLoanLenders from '../components/AutoLoanLenders'
 
 export const IndexPageTemplate = ({
   image,
@@ -39,9 +41,6 @@ export const IndexPageTemplate = ({
         <h1
           className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
           style={{
-            boxShadow:
-              '#4675c3 0.5rem 0px 0px, #4675c3 -0.5rem 0px 0px',
-            backgroundColor: '#4675c3',
             color: 'white',
             lineHeight: '1',
             padding: '0.25em',
@@ -52,9 +51,6 @@ export const IndexPageTemplate = ({
         <h3
           className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
           style={{
-            boxShadow:
-              '#4675c3 0.5rem 0px 0px, #4675c3 -0.5rem 0px 0px',
-            backgroundColor: '#4675c3',
             color: 'white',
             lineHeight: '1',
             padding: '0.25em',
@@ -87,6 +83,8 @@ export const IndexPageTemplate = ({
                   </div>
                 </div>
                 <Features gridItems={intro.blurbs} />
+                <StudentLoanLenders />
+                <AutoLoanLenders />
                 <div className="columns">
                   <div className="column is-12 has-text-centered">
                     <Link className="btn" to="/products">
@@ -96,7 +94,7 @@ export const IndexPageTemplate = ({
                 </div>
                 <div className="column is-12">
                   <h3 className="has-text-weight-semibold is-size-2">
-                    Latest stories
+                    Latest Articles
                   </h3>
                   <BlogRoll />
                   <div className="column is-12 has-text-centered">
