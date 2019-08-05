@@ -2,20 +2,17 @@
 templateKey: index-page
 title: Helping you find clarity in your financial decisions.
 image: /img/home-jumbotron.jpg
-heading: Helping you find clarity in your financial decisions.
+heading: What types of loans are available?
 subheading: 'We''ve reviewed hundreds of credit cards, banks, and more for you.'
 mainpitch:
-  title: Why Kaldi
-  description: >
-    Kaldi is the coffee store for everyone who believes that great coffee
-    shouldn't just taste good, it should do good too. We source all of our beans
-    directly from small scale sustainable farmers and make sure part of the
-    profits are reinvested in their communities.
+  title: What We Can Do for You
+  description: >-
+    Our reviews and guides can help you with each stage of the loan application
+    and repayment process, whether you're applying for a mortgage, personal loan
+    or small business loan.
 description: >-
-  Kaldi is the ultimate spot for coffee lovers who want to learn about their
-  java’s origin and support the farmers that grew it. We take coffee production,
-  roasting and brewing seriously and we’re glad to pass that knowledge to
-  anyone.
+  We take a look at some of most common reasons people take out loans and what
+  you can expect for each type of loan.
 intro:
   blurbs:
     - image: /img/coffee.png
